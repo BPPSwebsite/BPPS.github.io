@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+<body>
+<h3>Every day there are thousands of <em>niggas</em> in <strong>Paris</strong> starving</h3>
+<br>
+<p>Click the button bellow to support <strong>your</strong> local <em>niggas</em> in <strong>Paris</strong> today!</p>
+<br>
+<button><a href="https://youtu.be/dQw4w9WgXcQ">Click me!</a></button>
+</body>
+</html>
