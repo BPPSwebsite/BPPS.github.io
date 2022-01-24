@@ -29,8 +29,8 @@ var cTop = -(600-characterTop)
 }, 10 );
 function jump(){
     */
-    var cTop = -(700-characterTop)
-    if((characterTop>770)||(characterTop<140)||((blockLeft<30)&&(blockLeft>-70)&&((cTop-35<holeTop)||(cTop>holeTop+215)))){
+    var cTop = -(750-characterTop)
+    if((characterTop>766)||(characterTop<140)||((blockLeft<30)&&(blockLeft>-70)&&((cTop-35<holeTop)||(cTop>holeTop+215)))){
         alert("Bozo lost XD, Your score was "+counter + characterTop)
         character.style.top = 200 + "px";
         counter=0;
