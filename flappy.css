@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+width: 1000px;
+height: 600px;
+border: 1px solid black;
+margin: auto;
+margin-top: 100px;
+overflow: hidden;
+background-color: rgb(142, 185, 185);
+
+}
+#block{
+    width: 70px;
+    height: 600px;
+    background-color: black;
+    position: relative;
+    left: 930px;
+    animation: block 3s infinite linear;
+}
+@keyframes block{
+    0%{left: 930px;}
+    100%{left: -70px;}
+}
+#hole{
+    width: 70px;
+    height: 200px;
+    background-color: rgb(142, 185, 185);;
+    position: relative;
+    left: 930px;
+    top: -600px;
+    animation: block 3s infinite linear;
+}
+#character{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    border-radius: 50%;
+
+
+}
+#jumpButton{
+width: 30px;
+ padding: 10px;
+ position: relative;
+ left: 200;
+ top: -229px;
+ animation: jumpButton 25s infinite linear;
+ user-select: none;
+}
+
+@keyframes jumpButton{
+    0%{left: 930px;}
+    50%{left: 0px;}
+    100%{left:900px;}
+}

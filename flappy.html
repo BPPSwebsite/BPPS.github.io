@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" onclick="Jump">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="CoinGameStyle.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floppy burd</title>
+    <link rel="stylesheet" type="text/css" href="CoinGameStyle.css">
+    <link rel="stylesheet" href="flappy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
 
-	<ul id="widthSpecial">
+    <ul>
 		<li><a href="http://www.bpps.one">Home <i class="fa fa-home"></i></a></li>
 		<li><a href="http://www.bpps.one/about">About <i class="fa fa-question"></i></a></li>
 		<li><a href="games.html">Games <i class="fa fa-gamepad"></i></a></li>
 		<li><a href="http://www.bpps.one/support">Contact us <i class="fa fa-envelope"></i></a></li>
 		<li><a href="">bpps twitter <i class="fa fa-twitter"></i></a></li>
 	</ul>
-<center><p id="p1"> Welcome to bpps.one</p></center>
-	<img src="circle.png" height="50%" width="50%">
 
-	<script src="CoinGameJS.js" type="text/javascript">
-		
-	</script>
+    <div id="game">
+<div id="block">   </div>
+<div id="hole">   </div>
+<div id="character">
 
+</div>
+<div id="jumpButton">  <ul  onclick="jump()" style="max-width: 40px;" style="border-right: 1px solid black;"><li>Jump</li></ul> 
+</div>
+    </div>
+    
+    <script src="flappy.js"> </script>
 </body>
 </html>
