@@ -19,19 +19,10 @@ setInterval(function(){
 var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
 
-/*
-var cTop = -(600-characterTop)
-    if((characterTop>710)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+170))));{
-        alert("Bozo lost XD, Your score was "+counter)
-        character.style.top = 200 + "px";
-        counter=0;
-    }
-}, 10 );
-function jump(){
-    */
+
     var cTop = -(750-characterTop)
     if((characterTop>766)||(characterTop<140)||((blockLeft<30)&&(blockLeft>-70)&&((cTop-35<holeTop)||(cTop>holeTop+215)))){
-        alert("Bozo lost XD, Your score was "+counter + characterTop)
+        alert("Bozo lost XD, Your score was "+counter)
         character.style.top = 200 + "px";
         counter=0;
     }
