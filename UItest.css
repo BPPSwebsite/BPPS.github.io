@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    }
+
+#leftBox{
+    
+    width: 150px;
+    background-color: rgb(56, 206, 181);
+    position: relative;
+    top: 90px;
+    padding: 10px;
+}
+
+#adTest{
+    height: 1080px;
+    width: 150px;
+    background-color: rgb(223, 32, 25);
+    position: relative;
+    left: 1770px;
+    top: -1080px;
+}
+.littleLeftBox{
+    height: 100px;
+    width: 150px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-top: 50px;
+}
+#game1{
+    background-color:black ;
+    margin-top: 0px;
+    animation: slideIn 0.7s;
+    animation: slideOut 0.7s;
+}
+#game2{
+    background-color: brown;
+}
+#game3{
+    background-color: purple;
+}
+#game4{
+    background-color: orange;
+}
+#game5{
+    background-color:lime ;
+}
+@keyframes slideIn{
+    0%{left: 0px;}
+    50%{left: 100px;}
+}
+
+@keyframes slideOut{
+    0%{left: 100px;}
+    100%{left: 0px;}
+}
