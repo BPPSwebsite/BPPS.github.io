@@ -3,6 +3,9 @@ var hole = document.getElementById("hole");
 var character = document.getElementById("character");
 var jumping = 0;
 var counter = 0;
+var highscore = "bad";
+
+
 
 hole.addEventListener('animationiteration', () => {
     var random = -((Math.random()*350)+200);
@@ -21,8 +24,9 @@ var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
 
 
     var cTop = -(750-characterTop)
-    if((characterTop>766)||(characterTop<140)||((blockLeft<30)&&(blockLeft>-70)&&((cTop-35<holeTop)||(cTop>holeTop+215)))){
-        alert("Bozo lost XD, Your score was "+counter)
+    if((characterTop>730)||(characterTop<155)||((blockLeft<30)&&(blockLeft>-70)&&((cTop<holeTop+5)||(cTop>holeTop+190)))){
+     
+        alert("Bozo lost XD, Your score was "+counter +" and your highscore is "+ highscore)
         character.style.top = 200 + "px";
         counter=0;
     }
